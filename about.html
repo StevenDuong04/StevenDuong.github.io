@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="main.html"><img src="images/IMG_1682.PNG" class="logo"></a>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a onclick="newTab('https://www.linkedin.com/in/steven-duong-a5371a2a1')" href="#"><img src="LinkedIn-Logos/LI-In-Bug.png" class="linkedin"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, my name is Steven and I am currently a 2nd year computer science student who is eager to learn.
+                            Outside of school, I am employed at the Ok Tire warehouse as a shipper and receiver, where
+                            my tasks vary and are done miraculously. I also enjoy spending my time with my beautiful girlfriend
+                            as well as my family. My friends and family would describe me as an out-going individual, once you get
+                            to know me and with an attitude of ambitiousness towards my goals. I have always enjoyed working with 
+                            technology ever since I was a little kid and this is a dream that I am pursuing.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>Back-End Development</span><br>Server-side development, databases, APIs</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Ok Tire</span><br>Shipping and Receiving</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>High School Deploma</span><br>R.E. Mountain Secondary School</li>
+                                <li><span>Computer Science</span><br>Simon Fraser University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            function openNewTab() {
+              const filePath = 'CV.pdf';
+              window.open(filePath, '_blank');
+            }
+        </script>
+        <script>
+            function newTab(url) {
+                window.open(url, '_blank');
+            }
+        </script>
+    </body>
+    <footer>
+        <p>&copy; 2024 Steven Duong</p>
+        <nav class="foot">
+          <a href="main.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</html>

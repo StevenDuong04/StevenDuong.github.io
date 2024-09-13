@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="main.html"><img src="images/IMG_1682.PNG" class="logo"></a>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a onclick="newTab('https://www.linkedin.com/in/steven-duong-a5371a2a1')" href="#"><img src="LinkedIn-Logos/LI-In-Bug.png" class="linkedin"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <form action="https://formspree.io/f/mnnayvab" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <textarea name="message" placeholder="Send me a message!" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function newTab(url) {
+                window.open(url, '_blank');
+            }
+        </script>
+    </body>
+    <footer>
+        <p>&copy; 2024 Steven Duong</p>
+        <nav class="foot">
+          <a href="main.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</html>
