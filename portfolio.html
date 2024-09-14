@@ -8,12 +8,15 @@
         <link rel="stylesheet" href="style1.css">
     </head>
     <body>
-        <div id="header">
+        <header id="header">
             <div class="container">
                 <nav>
-                    <a href="main.html"><img src="images/IMG_1682.PNG" class="logo"></a>
-                    <ul>
-                        <li><a href="main.html">Home</a></li>
+                    <a href="index.html"><img src="images/IMG_1682.PNG" class="logo"></a>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span>&#9776;</span>
+                    </div>
+                    <ul id="nav-links">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -21,7 +24,7 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
 
         <div id="portfolio">
             <div class="container">
@@ -78,6 +81,14 @@
                 window.open(url, '_blank');
             }
         </script>
+        <script>
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+        
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+            });
+        </script>  
     </body>
     <footer>
         <p>&copy; 2024 Steven Duong</p>
