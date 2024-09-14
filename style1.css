@@ -237,8 +237,7 @@ nav ul li a:hover {
 
 /* Contact */
 .contact-left {
-    flex-basis: 70%;
-    padding-left: 35%;
+    flex-basis: 100%;
 }
 
 form {
@@ -362,11 +361,4 @@ footer p {
     form {
         width: 100%;
     }
-
-    foot {
-        justify-content: space-between;
-        display: flex;
-        width: 100%;
-    }
-
 }
