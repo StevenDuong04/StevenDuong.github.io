@@ -228,7 +228,7 @@ nav ul li a:hover {
 
 /* Form */
 .contact-left {
-    flex-basis: 35%;
+    flex-basis: 100%;
 }
 
 form {
@@ -282,7 +282,9 @@ footer p {
 }
 
 .foot {
+    display: flex;
     text-align: center;
+    justify-content: space-between;
     margin: 20px 165px;
 }
   
@@ -343,6 +345,16 @@ footer p {
     }
 
     .about-col-2 {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    foot {
+        justify-content: space-between;
+        display: flex;
         width: 100%;
     }
 }
