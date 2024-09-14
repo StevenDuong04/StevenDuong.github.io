@@ -348,15 +348,4 @@ footer p {
     .logo {
         width: 100px;
     }
-
-    .sub-title {
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-        margin-right: 50px;
-        margin-left: -35px;
-    }
-
 }
