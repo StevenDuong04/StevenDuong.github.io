@@ -348,4 +348,9 @@ footer p {
     .logo {
         width: 100px;
     }
+
+    body {
+        width: 100%;
+    }
+
 }

@@ -337,5 +337,13 @@ footer p {
     .logo {
         width: 100px;
     }
+
+    body {
+        width: 100%;
+    }
+
+    .about-col-2 {
+        width: 100%;
+    }
 }
 
